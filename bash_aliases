@@ -1,0 +1,8 @@
+alias cd-2='cd ../..'
+alias cd-3='cd ../../..'
+alias cd-4='cd ../../../..'
+alias cd-5='cd ../../../../..'
+alias ee='eyaml edit'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'

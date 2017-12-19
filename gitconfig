@@ -1,0 +1,7 @@
+[user]
+    email = stefan.kleindl@rise-world.com
+    name = Stefan Kleindl
+[push]
+    default = simple
+[alias]
+    prp = !git pull --rebase && git push

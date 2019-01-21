@@ -9,6 +9,7 @@
     ~/.profile: profile
     ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases
+    ~/.bash_completion: bash_completion.sh
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vim: vim/

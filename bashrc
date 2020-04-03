@@ -122,3 +122,6 @@ if [ ! -z $(which keychain) ]; then
 		eval $(keychain --eval --agents ssh --nogui -Q -q id_dsa)
     fi
 fi
+
+# kubectx and kubens
+export PATH="~/.kubectx:$PATH"

@@ -13,8 +13,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=5000
-HISTFILESIZE=10000
+HISTSIZE=10000 #10.000
+HISTFILESIZE=100000 #100.000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -123,5 +123,12 @@ if [ ! -z $(which keychain) ]; then
     fi
 fi
 
+# Function to add a directory to PATH. It checks if directory exists and if directory is already in PATH.
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
 # kubectx and kubens
-export PATH="~/.kubectx:$PATH"
+pathadd ~/.kubectx

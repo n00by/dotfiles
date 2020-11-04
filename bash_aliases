@@ -12,5 +12,7 @@ alias ee='eyaml edit'
 #kubectl
 alias k=kubectl
 complete -F __start_kubectl k
+alias kctx=kubectx
+alias kns=kubens
 #div
 alias myip='curl -w "\n" ident.me'

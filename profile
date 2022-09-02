@@ -20,3 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# add Homebrew to my PATH:
+eval "$($HOME/.linuxbrew/bin/brew shellenv)"

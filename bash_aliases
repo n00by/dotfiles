@@ -14,5 +14,6 @@ alias k=kubectl
 complete -F __start_kubectl k
 alias kctx=kubectx
 alias kns=kubens
+alias kb='kustomize build .'
 #div
 alias myip='curl ifconfig.me'

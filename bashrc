@@ -130,5 +130,5 @@ pathadd() {
     fi
 }
 
-# kubectx and kubens
-pathadd ~/.kubectx
+# load kube configs
+$(which load-kube-configs.sh) && source load-kube-configs.sh

@@ -132,3 +132,6 @@ pathadd() {
 
 # load kube configs
 $(which load-kube-configs.sh) && source load-kube-configs.sh
+
+# krew path
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

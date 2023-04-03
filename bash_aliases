@@ -12,8 +12,10 @@ alias ee='eyaml edit'
 #kubectl
 alias k=kubectl
 complete -F __start_kubectl k
-alias kctx=kubectx
-alias kns=kubens
+alias kctx='kubectl ctx'
+alias kns='kubectl ns'
+alias kdf='kubectl df-pv'
+alias ksniff='kubectl sniff'
 alias kb='kustomize build .'
 #div
 alias myip='curl ifconfig.me'
